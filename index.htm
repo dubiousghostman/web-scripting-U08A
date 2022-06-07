@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Choose Your Cassette</title>
+<!--
+
+    Choose Your Cassette Assignment
+    Date: 5/31/22
+    Mackenzie King
+    
+   JavaScript page where I try to demonstrate the use of a JSON payload to display an invoice of five items. This current version is a mid-reverse engineered copy based off code from one of the demos.
+
+-->
+
+</head>
+<style>
+  
+  body{
+    /* Set a background image to make the page look more professional. Because I was in a hurry, I used a generic classroom picture */
+   background-image: url(https://media.blogto.com/articles/4420-20141210-RotateThis-590-1.jpg?cmd=resize_then_crop&quality=70&w=2048&height=1365);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+/* Set a box element to make the text easier to read against the background image. We'll put all our forms and buttons within this element */
+  #element {
+    background-image: url("https://www.wpfaster.org/wp-content/uploads/2014/06/wrinkled-white-paper-texture-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+		opacity: 96%;
+		box-shadow: 3px 3px 6px 6px black;
+    margin-top: 200px;
+    margin-left: 240px;
+    margin-right: 240px;
+    text-align: center;
+    padding: 50px;
+
+</style>
+
+
+<body style="margin: 4%;">
+   <section id="element">
+<h1>Choose Your Cassette Player</h1>
+<form method="get" action="cassettechoice.php">
+<p>
+Cassette Players: <br />
+
+  <img src="https://cdn.shopify.com/s/files/1/0881/4568/products/WMF44_Closed_1024x.jpg?v=1585236409" style="width: 200px">
+  <br />
+
+       
+<input type="radio" name="player" value="walkman" />Sony Walkman
+  <br />
+  <br />
+  <br />
+  <br />
+
+<img src="https://i.redd.it/3vfvaiunujx01.jpg" style="width: 200px">
+  <br />
+
+<input type="radio" name="player" value="sanyo" checked="" />Sanyo
+  <br />
+  <br />
+  <br />
+  <br />
+
+
+  
+<img src="https://www.larkclub.com/wp-content/uploads/2012/03/17/ksbcnmmujwv38.jpg" style="width: 200px">
+  <br />
+
+  
+<input type="radio" name="player" value="aiwa" />Aiwa HS-T09
+  <br />
+  <br />
+  <br />
+  <br />
+
+</p>
+
+<p>
+<input type="submit" value="Choose This Player!" />
+</p>
+</form>
